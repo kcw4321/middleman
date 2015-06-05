@@ -9041,8 +9041,8 @@ button.close {
  * ------------------------------------- */
 /* line 7, /Users/Katy/code/kcw4321/middleman/source/stylesheets/layout/_utilities.css.scss */
 .padded {
-  padding-top: 8em;
-  padding-bottom: 8em; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 /* line 11, /Users/Katy/code/kcw4321/middleman/source/stylesheets/layout/_utilities.css.scss */
 .bg-red {
