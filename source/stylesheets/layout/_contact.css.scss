@@ -1,4 +1,14 @@
 .photo-staff {
-  width: 300px;
-
+  width: 200px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  &:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+.padding-t {
+  padding-top: 60px;
 }

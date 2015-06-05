@@ -1,12 +1,12 @@
 .footer {
   background: #222222;
   padding: 40px 0;
-  color: #FBFBFB;
+  color: $white;
 
   a {
   font-size: 24px;
   padding: 0 10px;
-  color: #FBFBFB;
+  color: $white;
 
   &:visted {
     color: white;
@@ -16,5 +16,3 @@
   }
   }
   }
-
-

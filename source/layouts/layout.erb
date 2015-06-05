@@ -5,7 +5,7 @@
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Stylus" %></title>
 
@@ -57,5 +57,32 @@
     </nav>
 
     <%= yield %>
+
+      <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <ul class="list-inline col-xs-8">
+          <li><% link_to "https://www.youtube.com/channel/UChCDYcBCrb8tuPAO6e0P-Hw" do %>
+            <i class="fa fa-youtube"></i>
+            <% end %>
+          </li>
+          <li><% link_to "#" do %>
+            <i class="fa fa-instagram"></i>
+            <%end%>
+          </li>
+          <li><% link_to "https://www.facebook.com/lewagonformation" do %>
+            <i class="fa fa-facebook"></i>
+            <% end %>
+          </li>
+          <li><% link_to "#" do %>
+            <i class="fa fa-twitter"></i>
+          <%end%>
+        </li>
+          </ul>
+      <div class="col-xs-4 text-right"><p>Stylus is a fictive product by Le Wagon</p></div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
