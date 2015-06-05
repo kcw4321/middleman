@@ -1,1 +1,20 @@
-// Your footer style
+.footer {
+  background: #222222;
+  padding: 40px 0;
+  color: #FBFBFB;
+
+  a {
+  font-size: 24px;
+  padding: 0 10px;
+  color: #FBFBFB;
+
+  &:visted {
+    color: white;
+  }
+  &:hover {
+  color: #9B2222;
+  }
+  }
+  }
+
+

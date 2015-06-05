@@ -2,9 +2,102 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<!-- Banner -->
+  <div id="banner">
+    <div class="container">
+      <div class="row">
+        <h1>Styl.us</h1>
+        <h2>Turn your pen into your best friend.</h2>
+        <p>Make every line you write count.</p>
+        <div class="btn btn-warning">GET YOUR STYLUS</div>
+      </div>
+    </div>
+  </div>
+  <!-- Features -->
+  <div class="card text-center padded">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag 'images/paper.svg', alt: 'Natural writing' %>
+          <h2>Natural writing</h2>
+          <p>Don't change your habits, write with a pen on paper notebooks</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag 'images/computer.svg', alt: 'Sync, copy' %>
+          <h2>Sync. copy</h2>
+          <p>Stylus instantaneously copy your text on your computer, in real-time</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag 'images/analytics.svg', alt: "Analytics" %>
+          <h2>Analytics</h2>
+          <p>Get feedbacks on the way you write, your favorite words, your frequent mistakes</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag 'images/data.svg', alt: "Storing your texts" %>
+          <h2>Storing your texts</h2>
+          <p>Everything line written with your stylus is stored in the cloud, so that it's never lost</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sign up -->
+
+  <div class="padded text-center">
+    <h2>Get news from stylus</h2>
+    <p>Leave us your mail and get stylus news</p>
+    <form class="form-inline">
+        <input class="form-control" type="email" placeholder="katy@gmail.com"></input>
+        <input class="btn btn-primary" type="submit" value="Subscribe"></input>
+    </form>
+    </div>
+
+  <!-- Map -->
+  <div id="map" style="width: 100%; height: 400px;"></div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <ul class="list-inline col-xs-8">
+          <li><% link_to "https://www.youtube.com/channel/UChCDYcBCrb8tuPAO6e0P-Hw" do %>
+            <i class="fa fa-youtube"></i>
+            <% end %>
+          </li>
+          <li><% link_to "#" do %>
+            <i class="fa fa-instagram"></i>
+            <%end%>
+          </li>
+          <li><% link_to "https://www.facebook.com/lewagonformation" do %>
+            <i class="fa fa-facebook"></i>
+            <% end %>
+          </li>
+          <li><% link_to "#" do %>
+            <i class="fa fa-twitter"></i>
+          <%end%>
+        </li>
+          </ul>
+      <div class="col-xs-4 text-right"><p>Stylus is a fictive product by Le Wagon</p></div>
+      </div>
+    </div>
+  </div>
+
