@@ -34,8 +34,8 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/pricing.html" do %>
-                <i class="fa fa-dollar"></i> Pricing
+              <% link_to "#features" do %>
+                <i class="fa fa-bolt"></i> Features
               <% end %>
             </li>
             <li>
@@ -55,6 +55,27 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
+         <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Order your stylus</h4>
+            </div>
+            <div class="modal-body">
+              <p>Leave your details to join the waiting list:</p>
+              <form action="#">
+              Name: <input type="text" name="name">
+              Email: <input type="text" name="email">
+              <button type="submit" class="btn btn-warning">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <%= yield %>
 
